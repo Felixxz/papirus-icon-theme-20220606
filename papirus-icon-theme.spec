@@ -10,6 +10,7 @@ Url:      https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 Packager: Andrey Cherepanov <cas@altlinux.org>
 
 Source:   %name-%version.tar
+Source1:  trash-grayed.tar
 
 BuildArch: noarch
 
@@ -64,6 +65,7 @@ Requires(pre): icon-theme-Papirus
 
 %prep
 %setup
+tar xf %SOURCE1
 
 %install
 mkdir -p %buildroot%_iconsdir
@@ -91,6 +93,7 @@ cp -a Papirus Papirus-Dark Papirus-Light ePapirus %buildroot%_iconsdir
 %changelog
 * Thu May 23 2019 Andrey Cherepanov <cas@altlinux.org> 20190521-alt1
 - New version.
+- Make trash icon grayed.
 
 * Thu May 02 2019 Andrey Cherepanov <cas@altlinux.org> 20190501-alt1
 - New version.
