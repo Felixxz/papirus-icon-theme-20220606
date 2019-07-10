@@ -1,2 +1,1 @@
-copy: *.tar
 tar: @version@:.

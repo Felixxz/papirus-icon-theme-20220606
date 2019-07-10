@@ -10,7 +10,6 @@ Url:      https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 Packager: Andrey Cherepanov <cas@altlinux.org>
 
 Source:   %name-%version.tar
-Source1:  trash-grayed.tar
 
 BuildArch: noarch
 
@@ -65,7 +64,6 @@ Requires(pre): icon-theme-Papirus
 
 %prep
 %setup
-tar xf %SOURCE1
 # Make network menu item in ALT looks like upstream Internet menu item
 for i in 16 22 24 32 48 64;do
     ln -s internet-web-browser.svg Papirus/${i}x${i}/apps/applications-network.svg
