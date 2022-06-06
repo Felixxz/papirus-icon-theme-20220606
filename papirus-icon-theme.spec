@@ -1,6 +1,6 @@
 Name:     papirus-icon-theme
-Version:  20220508
-Release:  alt2
+Version:  20220606
+Release:  alt1
 
 Summary:  All Papirus icon themes
 License:  GPLv3
@@ -113,6 +113,9 @@ cp -a Papirus Papirus-Dark Papirus-Education Papirus-Light ePapirus %buildroot%_
 %_iconsdir/ePapirus
 
 %changelog
+* Mon Jun 06 2022 Kirill Izmestev <felixz@altlinux.org> 20220606-alt1
+- new version 20220606
+
 * Wed May 11 2022 Kirill Izmestev <felixz@altlinux.org> 20220508-alt2
 - Add new Papirus icon theme: Papirus-Education
 (based on Papirus-Light, but with orange folders).
